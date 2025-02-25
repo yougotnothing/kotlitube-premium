@@ -7,10 +7,15 @@ data class HomeResponse(
 
 data class HomeResponseContents(
     val title: String,
-    val videoId: String,
-    val playlistId: String,
+    val videoId: String?,
+    val browseId: String?,
+    val playlistId: String?,
+    val description: String?,
+    val count: String?,
     val thumbnails: List<HomeResponseContentsThumbnails>,
-    val artists: List<HomeResponseContentsArtists>
+    val artists: List<HomeResponseContentsArtists>?,
+    val author: List<HomeResponseContentsArtists>?,
+    val album: HomeResponseContentsArtists?
 )
 
 data class HomeResponseContentsThumbnails(

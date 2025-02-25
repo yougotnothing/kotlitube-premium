@@ -28,6 +28,11 @@ android {
                 version = "3.13"
                 buildPython("src/main/python/.venv/bin/python3.13")
                 pip {
+                    install("certifi==2025.1.31")
+                    install("charset-normalizer==3.4.1")
+                    install("idna==3.10")
+                    install("requests==2.32.3")
+                    install("urllib3==2.3.0")
                     install("ytmusicapi==1.10.1")
                 }
             }
